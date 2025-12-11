@@ -1,11 +1,18 @@
-first_number=25
-second_number=56
-print(first_number+second_number)
+info=[#list
+    ("Alice", "math"),#tuple
+    ("bob","science"),
+    ("Alice","science"),
+    ("charlie","math"),
+    ("bob","maths"),
+    ("Alice","English"),
+    ("Charlie","English"),
+]
+unique_course=set()
 
-'''
-approach used by mam is 
-a=5
-b=6
-sum=a+b
-print(sum)
-'''
+for tup in info:
+    unique_course.add(tup[1]) #course
+print(unique_course)
+
+#another method of writing it 
+# for name,course in info:
+# print(name,course)

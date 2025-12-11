@@ -8,6 +8,14 @@ info=[#list
     ("Charlie","English"),
 ]
 
+dict={}
+
 for name,course in info:
-    if(course=="English"):
-        print(name)
+    if(dict.get(name)==None):
+        dict.update({name: set()})
+        dict[name].add(course)
+
+    else:
+         dict[name].add(course)
+
+print(dict)
