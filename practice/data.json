@@ -1,0 +1,10 @@
+
+{
+   "name":"sanskriti",
+   "isTeacher": true, 
+   "address":{
+    "city":"delhi",
+    "country":"india"
+   },
+   "subjects":["python","ai/ml"]
+}
